@@ -695,16 +695,4 @@ var Signatures = []Signature{
     description: "Environment configuration file",
     comment:     "",
   },
-  PatternSignature{
-    part:        PartPath,
-    match:       regexp.MustCompile(`credential`),
-    description: "Contains word: credential",
-    comment:     "",
-  },
-  PatternSignature{
-    part:        PartPath,
-    match:       regexp.MustCompile(`password`),
-    description: "Contains word: password",
-    comment:     "",
-  },
 }
