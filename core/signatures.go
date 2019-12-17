@@ -44,19 +44,19 @@ func (f *MatchFile) IsSkippable() bool {
 }
 
 type Finding struct {
-  Id              string
-  FilePath        string
-  Action          string
-  Description     string
-  Comment         string
-  RepositoryOwner string
-  RepositoryName  string
-  CommitHash      string
-  CommitMessage   string
-  CommitAuthor    string
-  FileUrl         string
-  CommitUrl       string
-  RepositoryUrl   string
+  Id              string `json:"id"`
+  FilePath        string `json:"file_path"`
+  Action          string `json:"action"`
+  Description     string `json:"description"`
+  Comment         string `json:"comment"`
+  RepositoryOwner string `json:"repository_owner"`
+  RepositoryName  string `json:"repository_name"`
+  CommitHash      string `json:"commit_hash"`
+  CommitMessage   string `json:"commit_message"`
+  CommitAuthor    string `json:"commit_author"`
+  FileUrl         string `json:"file_url"`
+  CommitUrl       string `json:"commit_url"`
+  RepositoryUrl   string `json:"repository_url"`
 }
 
 func (f *Finding) setupUrls() {
